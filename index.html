@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Biodata Form</title>
+    <style>
+    </style>
+  </head>
+  <body>
+    <form method="POST" autocomplete="on" action="http://bloomingdale.sat.iit.edu/kriedan/lab3formscript.php">
+	  <fieldset>
+	    <legend><h1>Volunteer Form</h1></legend>
+		<h2>My Info</h2>
+		<div class="row" style="display:flex; width:400px; margin-top:15px;">
+	      <div class="column" style="flex:50%;"><label>First Name: </label></div><div class="column" style="flex:50%;"><input type="text" name="first_name_field" placeholder="first name"></div> 
+		</div>
+		<div class="row" style="display:flex; width:400px; margin-top:15px;">
+	      <div class="column" style="flex:50%;"><label>Last Name: </label></div><div class="column" style="flex:50%;"><input type="text" name="last_name_field" placeholder="last name"></div> 
+		</div>
+		<div class="row" style="display:flex;  width:400px; margin-top:15px;">
+	      <div class="column" style="flex:50%;"><label>Phone Number: </label></div><div class="column" style="flex:50%;"><input type="text" name="phone_field" placeholder="phone number"></div> 
+		</div>
+		<div class="row" style="display:flex;  width:400px; margin-top:15px;">
+	      <div class="column" style="flex:50%;"><label>Email: </label></div><div class="column" style="flex:50%;"><input type="email" name="email_field" placeholder="email"></div> 
+		</div>		
+		<div class="row" style="display:flex;  width:400px; margin-top:15px;">
+	      <div class="column" style="flex:50%;">
+		    <label>Gender:</label>
+		  </div>
+		  <div class="column" style="flex:50%;">
+		    <label>Male: <input type="radio" name="gender_field" value="Male"></label>
+		    <label>Female: <input type="radio" name="gender_field" value="Female" checked="checked"></label>
+		  </div>	
+		</div>
+		<div class="row" style="display:flex;  width:400px; margin-top:15px;">
+	      <div class="column" style="flex:50%;"><label>Age: </label></div>
+		  <div class="column" style="flex:50%;">
+		    <select  name="age_field">
+              <option value="under 18">under 18</option>
+			  <option value="18-24">18-24</option>
+              <option value="25-34">25-34</option>
+              <option value="35-44">35-44</option>
+			  <option value="45-54">45-54</option>
+			  <option value="55-64">55-64</option>
+			  <option value="65 and over">65 and over</option>	
+		    </select>
+		  </div> 
+		</div>		
+	  </fieldset>
+	  <fieldset>
+	    <legend><h2>My Availability</h2></legend>
+		<div>
+		  <div>
+	        <label><input type="checkbox" name="available_field[]" value="Sunday">Sunday</label><br>
+			<label><input type="checkbox" name="available_field[]" value="Monday">Monday</label><br>
+			<label><input type="checkbox" name="available_field[]" value="Tuesday">Tuesday</label><br>
+			<label><input type="checkbox" name="available_field[]" value="Wednesday">Wednesday</label><br>
+			<label><input type="checkbox" name="available_field[]" value="Thursday">Thursday</label><br>
+			<label><input type="checkbox" name="available_field[]" value="Friday">Friday</label><br>
+			<label><input type="checkbox" name="available_field[]" value="Saturday">Saturday</label><br>
+		  </div> 
+		</div>
+		<div style="margin-top:15px;">
+		  <label>Any Comments?</label><br>
+		  <textarea cols="30" rows="10" name="comments_field"></textarea>
+		</div>
+		<div style="margin-top:15px;">
+		  <input type="hidden" name="hidden_field" value="AJ Winbush">  
+		</div>
+		<div style="margin-top:15px;">
+		  <input type="submit" value="Send Me">
+		</div>
+	  </fieldset>
+    </form>
+  </body>
+</html>
